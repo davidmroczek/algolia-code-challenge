@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Restaurant Locator - by Algolia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./assets/favicon.ico" type="image/png" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+
+  <body>
+    <!-- INTERFACE -->
+    <div class="page">
+      <div class="page__container">
+
+        <!-- search bar -->
+        <div class="page__search">
+          <div class="search-bar">
+            <div class="search-bar__container">
+              <input type="search" id="search-bar" class="search-bar__input" placeholder="Search for Restaurants by Name, Cuisine, Location" />
+            </div>
+          </div>
+        </div>
+        <!-- /search bar -->
+
+        <div class="page__content">
+
+          <!-- filters -->  
+          <div class="filter" id="facets">
+            <div id="food_type" class="filter__section">
+              <h2 class="filter__title">Food Type</h2>
+            </div>
+            <div id="rating" class="filter__section">
+              <h2 class="filter__title">Rating</h2>
+              <div id="0-star" class="filter__label">
+                <span class="filter__label-text">
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </span>
+              </div>
+              <div id="1-star" class="filter__label">
+                <span class="filter__label-text">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </span>
+              </div>
+              <div id="2-star" class="filter__label">
+                <span class="filter__label-text">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </span>
+              </div>
+              <div id="3-star" class="filter__label">
+                <span class="filter__label-text">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </span>
+              </div>
+              <div id="4-star" class="filter__label">
+                <span class="filter__label-text">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                </span>
+              </div>
+              <div id="5-star" class="filter__label">
+                <span class="filter__label-text">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </span>
+              </div>          
+            </div>
+            <div id="payment_options" class="filter__section">
+            </div>
+          </div>
+          <!-- /filters -->
+
+          <!-- results -->
+          <div class="results">
+            <div class="results__stats-bar">
+              <div class="results__count-text"></div>
+            </div>
+
+            <div class="results__item" id="hits"></div>
+
+            <div class="button">
+              <button class="button__link">Show More</button>
+            </div>
+          </div>
+          <!-- /results -->
+
+        </div>
+      </div>
+    </div>
+    <!-- /INTERFACE -->
+
+    <!-- SCRIPTS -->
+    <script src="./index.js" type="module"></script>
+    <!-- /SCRIPTS -->
+  </body>
+</html>

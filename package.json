@@ -1,0 +1,16 @@
+{
+  "name": "algolia-code-challenge",
+  "source": "./index.html",
+  "scripts": {
+    "start": "rm -rf .parcel-cache && parcel index.html --port 3000",
+    "build": "rm -rf .parcel-cache && parcel build index.html"
+  },
+  "devDependencies": {
+    "algoliasearch": "^4.23.2",
+    "algoliasearch-helper": "^3.16.3",
+    "parcel": "latest"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
+}
