@@ -17,7 +17,7 @@ Hi George,
 
 Thanks for reaching out and sharing your open questions. 
 
-An **index** holds all the data you want to make seachible. This could be for instance in your case a product feed or a set of FAQ articles.
+An **index** holds all the data you want to make searchable. This could be for instance in your case a product feed or a set of FAQ articles.
 Each product or FAQ article in our example would be a **record** in your index. Each record would consist of attributes such as SKU, product name, product description, color, size - those can be used for a variaty of usecases, including search or filtering.
 
 [**Custom Ranking**](https://www.algolia.com/doc/guides/managing-results/must-do/custom-ranking/#custom-ranking) allows you to define specific attributes, which will have a higher weight in your search results. For instance you might want to rank popular products higher in the results. You can find more examples in the linked help page for inspiration. Algolia supports all boolean or numeric attributes for your custom ranking, so these could include total number of sales or returns, star rating, number of views or likes etc.
